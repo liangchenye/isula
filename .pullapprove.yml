@@ -4,17 +4,24 @@ requirements:
   signed_off_by:
     required: true
 
-always_pending:
-  title_regex: 'WIP'
-
 group_defaults:
+  required: 1
   approve_by_comment:
     enabled: true
     approve_regex: ^LGTM
     reject_regex: ^Rejected
   reset_on_push:
     enabled: true
-  reviewers:
+  author_approval:
+    ignored: true
+  always_pending:
+    title_regex: ^WIP
+    explanation: 'Work in progress...'
+  conditions:
+    branches:
+      - master
+
+groups:
+  isula:
     teams:
       - isula-maintainers
-  required: 1
