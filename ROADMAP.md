@@ -8,4 +8,6 @@ The items in the 1.0 roadmap can be broken down into smaller milestones that are
 We plan to have a first stable release at the end of 2017.12.31.
 Just like Ubuntu, we ship it like this:  Isula-17.04, Isula-17.10.
 
+Still, we will continue to release 18.04 and 18.10 in 2018.
+
 ## Add one or more incubate projects
